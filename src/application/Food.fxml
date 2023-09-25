@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <RadioButton fx:id="button1" layoutX="58.0" layoutY="126.0" mnemonicParsing="false" onAction="#getFood" text="Pizza">
+         <toggleGroup>
+            <ToggleGroup fx:id="food" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="button3" layoutX="416.0" layoutY="126.0" mnemonicParsing="false" onAction="#getFood" text="Drink" toggleGroup="$food" />
+      <RadioButton fx:id="button2" layoutX="242.0" layoutY="126.0" mnemonicParsing="false" onAction="#getFood" text="Burger" toggleGroup="$food" />
+      <Label layoutX="82.0" layoutY="46.0" text="Select Your Food Item">
+         <font>
+            <Font name="Californian FB" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Myimg" fitHeight="150.0" fitWidth="200.0" layoutX="196.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene1" text="&lt; Back" />
+   </children>
+</AnchorPane>

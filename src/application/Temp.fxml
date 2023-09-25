@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.slider">
+   <children>
+      <Slider fx:id="mySlider" layoutX="203.0" layoutY="69.0" majorTickUnit="10.0" minorTickCount="10" orientation="VERTICAL" prefHeight="278.0" prefWidth="14.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Label fx:id="tempLabel" layoutX="285.0" layoutY="200.0" text="Label">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene5" text="&lt; Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MusicPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MusicController">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="1.0" layoutY="70.0" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+      <Button fx:id="playButton" layoutX="20.0" layoutY="101.0" mnemonicParsing="false" onAction="#playMedia" text="PLAY">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="pauseButton" layoutX="72.0" layoutY="101.0" mnemonicParsing="false" onAction="#pauseMedia" text="PAUSE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="133.0" layoutY="101.0" mnemonicParsing="false" onAction="#resetMedia" text="RESET">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="prevButton" layoutX="190.0" layoutY="101.0" mnemonicParsing="false" onAction="#prevMedia" text="PREVIOUS">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextButton" layoutX="274.0" layoutY="101.0" mnemonicParsing="false" onAction="#nextMedia" text="NEXT">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="speedBox" layoutX="336.0" layoutY="101.0" onAction="#speedMedia" prefHeight="30.0" prefWidth="83.0" promptText="SPEED" />
+      <Slider fx:id="volumeSlider" layoutX="419.0" layoutY="109.0" max="100.0" prefHeight="14.0" prefWidth="145.0" value="50.0" />
+      <Label fx:id="songLabel" alignment="CENTER" layoutX="-1.0" layoutY="6.0" prefHeight="57.0" prefWidth="600.0" text="MP3 Player">
+         <font>
+            <Font name="Sitka Small" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

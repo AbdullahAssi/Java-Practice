@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane fx:id="sectionPane" layoutX="-6.0" layoutY="-9.0" prefHeight="389.0" prefWidth="475.0">
+         <children>
+            <Button layoutX="46.0" layoutY="159.0" mnemonicParsing="false" onAction="#switchToScene2" text="Game" />
+            <Label fx:id="nameLabel" layoutX="28.0" layoutY="34.0" text="Welcome">
+               <font>
+                  <Font name="High Tower Text" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="100.0" text="Select Any Item Below">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Logout" layoutX="43.0" layoutY="312.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            <Button layoutX="46.0" layoutY="202.0" mnemonicParsing="false" onAction="#switchToScene3" text="Magic" />
+            <Button layoutX="48.0" layoutY="248.0" mnemonicParsing="false" onAction="#switchToScene4" text="Store" />
+            <Button layoutX="203.0" layoutY="160.0" mnemonicParsing="false" onAction="#switchToScene5" text="Temp" />
+            <Button layoutX="200.0" layoutY="202.0" mnemonicParsing="false" onAction="#switchToScene6" text="Menu" />
+            <Button layoutX="198.0" layoutY="248.0" mnemonicParsing="false" onAction="#switchToScene7" text="Music Player" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
